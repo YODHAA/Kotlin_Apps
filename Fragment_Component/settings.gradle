@@ -1,0 +1,2 @@
+rootProject.name='Fragment_Component'
+include ':app'
