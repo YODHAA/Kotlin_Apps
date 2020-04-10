@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity(),Callback<NewsArticles>{
         var newsData=NewsApiService.create()
         newsData.getTopHighlights().enqueue(this)
 
-        recyclerview.layoutManager=LinearLayoutManager(this)
-        recyclerview.adapter=NewsAdapter(data)
+        recyclerview.layoutManager= LinearLayoutManager(this)
+        recyclerview.adapter=NewsAdapter(data,this)
 
     }
 
