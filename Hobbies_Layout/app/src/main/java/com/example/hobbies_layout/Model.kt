@@ -1,9 +1,9 @@
 package com.example.hobbies_layout
 
-data class Hobby(var title:String)
+data class Hobby(var title: String)
 
 object Supplier {
-    val hobbies= listOf<Hobby>(
+    val hobbies = listOf<Hobby>(
         Hobby("Swimming"),
         Hobby("Running"),
         Hobby("Dancing"),

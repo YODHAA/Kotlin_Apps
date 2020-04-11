@@ -13,11 +13,11 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         //catch the sent message here
-         val bundle:Bundle? = intent.extras
-        val msg=bundle!!.getString("user_message")
+        val bundle: Bundle? = intent.extras
+        val msg = bundle!!.getString("user_message")
 
-        Toast.makeText(this,msg,Toast.LENGTH_LONG).show()
-        txvUserMessage.text=msg
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+        txvUserMessage.text = msg
     }
 
 
