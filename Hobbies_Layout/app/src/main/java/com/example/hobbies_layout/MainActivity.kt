@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             // transition to next Activity
             val intent=Intent(this,SecondActivity::class.java)
             // pass msg to next Intent
-            
+             intent.putExtra("user_message",message)
             startActivity(intent)
         }
 
