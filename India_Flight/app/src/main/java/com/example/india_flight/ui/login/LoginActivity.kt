@@ -17,6 +17,7 @@ import android.widget.ProgressBar
 import android.widget.Toast
 
 import com.example.india_flight.R
+import com.example.india_flight.activities.WelcomeActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -64,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
 
             //Complete and destroy login activity once successful
 //            finish()
-            val intent=Intent(this,Dashboard_Page::class.java)
+            val intent=Intent(this,WelcomeActivity::class.java)
             startActivity(intent)
 
         })
