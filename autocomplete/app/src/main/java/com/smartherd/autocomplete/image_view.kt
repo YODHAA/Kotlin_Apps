@@ -21,7 +21,7 @@ class image_view : AppCompatActivity() {
         imageView.y = 580F // setting margin from top
 
         button.setOnClickListener {
-            imageView.setImageResource(R.drawable.ic_launcher_background)
+            imageView.setImageResource(R.drawable.login)
             layout?.addView(imageView)
         }
 

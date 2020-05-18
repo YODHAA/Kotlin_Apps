@@ -3,22 +3,27 @@
     <item
         android:id="@+id/attach_file"
         android:title="Attach File"
-        android:icon="@drawable/login" />
+        android:icon="@drawable/login"
+        />
     <item
         android:id="@+id/delete"
         android:title="Delete"
-        android:icon="@drawable/ic_launcher_background" />
+        android:icon="@color/cardview_light_background"
+        />
     <item
         android:id="@+id/insert_chart"
         android:title="Insert Chart"
-        android:icon="@drawable/ic_launcher_foreground" />
+        android:icon="@drawable/login"
+        />
     <item
         android:id="@+id/insert_link"
         android:title="Insert Link"
-        android:icon="@drawable/login" />
+        android:icon="@drawable/login"
+        />
     <item
         android:id="@+id/backup"
         android:title="Backup"
-        android:icon="@drawable/ic_launcher_background" />
+        android:icon="@drawable/login"
+        />
 
 </menu>
