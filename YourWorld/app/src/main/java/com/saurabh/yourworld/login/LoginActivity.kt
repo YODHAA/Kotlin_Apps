@@ -8,7 +8,10 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.util.Patterns
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricPrompt
 import androidx.fragment.app.FragmentActivity
@@ -98,7 +101,7 @@ class LoginActivity : AppCompatActivity(){
                 .setTitle("Enter phone screen lock patter, PIN , password or fingerprint.")
                 .setSubtitle("Unlock Your World")
 //            .setDescription("Touch the fingerprint sensor")
-                .setNegativeButtonText("Negative Button")
+                .setNegativeButtonText("Cancel")
                 .build()
 
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
