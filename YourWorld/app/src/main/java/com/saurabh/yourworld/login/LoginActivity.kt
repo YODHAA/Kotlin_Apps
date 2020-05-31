@@ -75,6 +75,7 @@ class LoginActivity : AppCompatActivity(){
 
                 override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
                     super.onAuthenticationError(errorCode, errString)
+                   // startActivity(Intent(this@LoginActivity,SplashActivity::class.java))
                     if (errorCode == BiometricPrompt.ERROR_NEGATIVE_BUTTON) {
                         // user clicked negative button
                         Toast.makeText(applicationContext, "Authentication error: $errString", Toast.LENGTH_SHORT).show()
@@ -86,6 +87,7 @@ class LoginActivity : AppCompatActivity(){
 
                 override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                     super.onAuthenticationSucceeded(result)
+                    val authenticatedCryptoObject: BiometricPrompt.CryptoObject? = result.getCryptoObject()
                    // Toast.makeText(applicationContext, "Authentication succeeded!", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this@LoginActivity,MainActivity::class.java))
                 }
@@ -100,8 +102,7 @@ class LoginActivity : AppCompatActivity(){
             val promptInfo = BiometricPrompt.PromptInfo.Builder()
                 .setTitle("Enter phone screen lock patter, PIN , password or fingerprint.")
                 .setSubtitle("Unlock Your World")
-//            .setDescription("Touch the fingerprint sensor")
-                .setNegativeButtonText("Cancel")
+                .setDeviceCredentialAllowed(true)
                 .build()
 
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
