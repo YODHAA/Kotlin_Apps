@@ -4,11 +4,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--    <include layout="@layout/toolbar_custom"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:id="@+id/toolbar"/>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+        <!--        <Button-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentEnd="true"-->
+        <!--                android:layout_centerVertical="true"-->
+        <!--                android:text="SignOut" />-->
+    </androidx.appcompat.widget.Toolbar>
+
     <Button
         android:id="@+id/btn_change"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:accessibilityHeading="true"
         android:fontFamily="sans-serif-medium"
         android:text="Change Fragment "
         android:textAllCaps="false" />
